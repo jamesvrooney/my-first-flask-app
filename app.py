@@ -17,7 +17,7 @@ posts = {
 
 @app.route('/')
 def home():
-    return 'Hello James!'
+    return render_template('home.html', posts=posts)
 
 
 @app.route('/post/<int:post_id>')
